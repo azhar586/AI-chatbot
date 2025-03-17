@@ -30,6 +30,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
 }
 
 /* Chat Header */
@@ -117,5 +118,31 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        margin: 10px;
+    }
+    .chat-box {
+        height: calc(100vh - 140px);
+        padding: 15px;
+    }
+    .chat-header {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .chat-input {
+        padding: 10px;
+    }
+    .chat-input input, .chat-input button {
+        padding: 10px;
+    }
+    .bot-message, .user-message {
+        font-size: 14px;
+        padding: 10px 15px;
     }
 }
