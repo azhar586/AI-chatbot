@@ -12,6 +12,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 /* Smooth Background Animation */
@@ -81,6 +83,7 @@ body {
     display: flex;
     padding: 20px;
     background: #f8f9fa;
+    flex-shrink: 0;
 }
 
 .chat-input input {
@@ -103,6 +106,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
+    flex-shrink: 0;
 }
 
 .chat-input button:hover {
